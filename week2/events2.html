@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Events</title>
+	<style type="text/css">
+		.closed{
+			display: none;
+			}
+		.open{
+			display: block;
+			}
+		body{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function showme(){
+			x=document.getElementById('para');
+			x.className="open";
+		}
+		function hideme(){
+			x=document.getElementById('para');
+			x.className="closed";
+		}
+	</script>
+</head>
+<body>
+	<h1>This is Demo</h1>
+	<button type="button" onclick="showme()">SHOW</button>
+	<button type="button" onclick="hideme()">HIDE</button>
+	<p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptatum aliquid nam quam blanditiis cupiditate necessitatibus similique laboriosam provident, commodi consectetur voluptatem sapiente voluptatibus inventore illum neque. Blanditiis deserunt odio neque mollitia voluptate voluptates sequi, maiores nobis odit recusandae quaerat.</p>
+</body>
+</html>
