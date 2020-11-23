@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrays</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		body{
+			text-align: center;
+		}
+		button{
+			margin: 20px;
+			padding: 20px 50px;
+			cursor: pointer;
+			background: pink;
+			font-weight: bolder;
+			font-size: 15px; 
+		}
+		.top{
+			margin-top: 100px;
+			padding: 25px;
+			border: 1px solid blue;
+		}
+		.bottom{
+			margin-top: 100px;
+			padding: 25px;
+			border: 1px solid blue; 
+		}
+	</style>
+	
+	<script type="text/javascript">
+		var fruits=["Mangoes"];
+		var places=["Delhi"];
+		function loadfruits()
+		{
+			document.getElementById('fruits').innerHTML=fruits;
+			document.getElementById('places').innerHTML=places;
+		}
+		function addfruit()
+		{
+			var fruit=prompt("Enter a fruit : ");
+			fruits[fruits.length]=fruit;
+			document.getElementById('fruits').innerHTML=fruits;
+		}
+		function addplace()
+		{
+			var place=prompt("Enter a place : ");
+			places[places.length]=place;
+			document.getElementById('places').innerHTML=places;
+		}
+	</script>
+</head>
+<body onload="loadfruits()">
+	<button onclick="addfruit()">Add Fruits</button>
+	<button onclick="addplace()">Add Places</button>
+	<div class="top">
+		<p id="fruits"></p>
+	</div>
+	<div class="bottom">
+		<p id="places"></p>
+	</div>
+</body>
+</html>
